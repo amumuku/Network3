@@ -68,8 +68,8 @@ while true; do
             show_message "32" "安装完成!"
             ;;
         2)
-            # MY_IP=$(hostname -I | awk '{print $1}')
-            process_notification "访问日志: https://account.network3.ai/main?o=119.28.49.84:8080"
+            MY_IP=$(hostname -I | awk '{print $1}')
+            process_notification "访问日志: https://account.network3.ai/main?o=$MY_IP:8080"
             ;;
         3)
             echo "1. 启动"
